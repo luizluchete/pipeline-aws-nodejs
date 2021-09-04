@@ -12,8 +12,9 @@ app.get('/', (request, response)=>{
     return response.json({message: 'Welcome to the home page baby !'})
 })
 
+const port = process.env.port || 3000;
 
-app.listen(3333, ()=>{
+app.listen(port, ()=>{
     console.log('Server is running !');
 
 })
